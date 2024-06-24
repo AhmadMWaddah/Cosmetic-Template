@@ -21,5 +21,23 @@ window.addEventListener("load", () => {
 		searchForm.classList.toggle("search__form__opened");
 	});
 
+
+	/* =--------------------------------------= Image Slider =------------------= */
+
+	const sliderContainer = document.querySelector(".home");
+	let slides = document.querySelectorAll(".home .slide");
+	let index = 0;
+	sliderContainer.addEventListener("click", (event) => {
+		if (event.target.classList.contains("next__btn")) {
+			slides[index].classList.remove("slide__active");
+			index = (index + 1) % slides.length;
+			slides[index].classList.add("slide__active");
+		} else if (event.target.classList.contains("prev__btn")) {
+			slides[index].classList.remove("slide__active");
+			index = (index - 1 + slides.length) % slides.length;
+			slides[index].classList.add("slide__active");
+		}
+	});
+
 	
 });

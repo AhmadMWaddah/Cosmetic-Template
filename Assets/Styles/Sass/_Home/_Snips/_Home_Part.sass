@@ -1,0 +1,112 @@
+@import "../../_Utils/_Animations.sass"
+
+.home
+	padding: 0
+
+	.slide
+		display: none
+		height: calc(100vh - 7rem)
+		
+		&__active
+			display: flex
+
+		@include respond-to($mobileBreakPoint)
+			position: relative
+			height: calc(100vh - 6rem)
+
+		.content
+			width: 50%
+			padding: 2rem 7%
+			display: flex
+			justify-content: center
+			align-items: flex-start
+			flex-flow: column
+			background: #fce9f2
+			position: relative
+
+			@include respond-to($tabletBreakPoint)
+				padding: 2rem
+
+			@include respond-to($mobileBreakPoint)
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				align-items: center
+				background: rgba(255, 255, 255, 0.7)
+
+			img
+				height: 25rem
+				width: 25rem
+				margin-bottom: 2rem
+				animation: fadeUp 0.2s linear backwards 0.2s
+				display: none
+
+				@include respond-to($mobileBreakPoint)
+					display: inline-block
+
+			span
+				display: block
+				color: $mainColor
+				font-size: 2.5rem
+				padding-bottom: 0.5rem
+				letter-spacing: 0.2rem
+				text-transform: uppercase
+				animation: fadeUp 0.2s linear backwards 0.4s
+
+				@include respond-to($tabletBreakPoint)
+					font-size: 2rem
+
+			h3
+				font-size: 5.5rem
+				text-transform: uppercase
+				color: $darkColor
+				animation: fadeUp 0.2s linear backwards 0.6s
+
+				@include respond-to($tabletBreakPoint)
+					font-size: 4rem
+
+			.btn
+				animation: fadeUp 0.2s linear backwards 0.8s
+
+			.controls
+				position: absolute
+				right: -7rem
+				bottom: 12%
+
+				@include respond-to($mobileBreakPoint)
+					position: static
+					margin-top: 7rem
+
+				div
+					height: 5rem
+					width: 5rem
+					line-height: 5rem
+					text-align: center
+					font-size: 3rem
+					margin: 0 1rem
+					background: $whiteColor
+					color: $darkColor
+					box-sizing: $boxShadow
+					cursor: pointer
+
+					@include respond-to($mobileBreakPoint)
+						margin: 0 0.5rem
+
+					&:hover
+						background: $mainColor
+						color: $whiteColor
+						transform: scale(1.1)
+
+		.image
+			width: 50%
+			height: 100%
+
+			@include respond-to($mobileBreakPoint)
+				width: 100%
+
+			img
+				height: 100%
+				width: 100%
+				object-fit: cover
