@@ -1,61 +1,175 @@
-/*
-Error: File to import not found or unreadable: _Home/_Home.sass.
-        on line 26 of Assets/Styles/Sass/Styles.sass
+/* =--------------------------------------= Import Fonts =------------------= */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+/* =--------------------------------------= Import Sass Variables  =------------------= */
+/* =--------= Border Sizing =-= */
+/* =--------= Fonts =-= */
+/* =--------= Colors =-= */
+/* =--------= Borders =-= */
+/* =--------= Borders =-= */
+/* =--------= Transitions =-= */
+/* =--------= Responsive Break Points =-= */
+/* =--------------------------------------= Import Mixins =------------------= */
+/* =--------------------------------------= Import Resets =------------------= */
+/* =--------------------------------------= Globals & Resets =------------------= */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.25s ease-in-out; }
 
-21: /* =--------------------------------------= Import Classes To Extends =------------------= *\/
-22: @import "_Utils/_Utils_Classes.sass"
-23: 
-24: 
-25: /* =--------------------------------------= Home Page Styles =------------------= *\/
-26: @import "_Home/_Home.sass"
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem; }
+  html::_webkit-scrollbar {
+    width: 1rem; }
+  html::_webkit-scrollbar-track {
+    background: transparent; }
+  html::_webkit-scrollbar-thumb {
+    background: #e84393; }
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%; } }
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%; } }
 
-Backtrace:
-Assets/Styles/Sass/Styles.sass:26
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:468:in `update_stylesheet'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:449:in `on_file_changed'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/config.rb:28:in `call'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:117:in `block in _process_changes'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:26:in `rescue_and_log'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:116:in `_process_changes'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:25:in `block in loop_for'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:20:in `loop'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:20:in `loop_for'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/loop.rb:85:in `_process_changes'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/loop.rb:51:in `block in start'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:26:in `rescue_and_log'
-/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:18:in `block in new'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: _Home/_Home.sass.\A         on line 26 of Assets/Styles/Sass/Styles.sass\A \A 21: /* =--------------------------------------= Import Classes To Extends =------------------= */\A 22: @import \"_Utils/_Utils_Classes.sass\"\A 23: \A 24: \A 25: /* =--------------------------------------= Home Page Styles =------------------= */\A 26: @import \"_Home/_Home.sass\""; }
+/* =--------------------------------------= Import Components =------------------= */
+/* =--------------------------------------= Import Classes To Extends =------------------= */
+/* =--------------------------------------= Home Page Styles =------------------= */
+@use "_Utils/_Animations.sass";
+header.header {
+  padding: 1.5rem 9%;
+  background: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000; }
+  @media (max-width: 991px) {
+    header.header {
+      padding: 1.5rem 2rem; } }
+  header.header .logo img {
+    height: 4rem; }
+  header.header .search__form {
+    height: 5rem;
+    width: 50rem;
+    border-radius: 0.5rem;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem; }
+    header.header .search__form input {
+      width: 100%;
+      background: none;
+      color: #777777;
+      font-size: 1.6rem;
+      text-transform: none; }
+    header.header .search__form label {
+      font-size: 2rem;
+      margin-left: 0.7rem;
+      color: #222222;
+      cursor: pointer; }
+      header.header .search__form label:hover {
+        color: #e84393; }
+    @media (max-width: 768px) {
+      header.header .search__form {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        border-top: 0.2rem solid #222222;
+        border-bottom: 0.2rem solid #222222;
+        width: 100%;
+        height: 6rem;
+        background: white;
+        display: none;
+        animation: fadeUp 0.2s linear backwards; }
+        header.header .search__form__opened {
+          display: flex; } }
+  header.header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: #222222;
+    background: whitesmoke;
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-left: 0.3rem;
+    border-radius: 0.5rem; }
+    header.header .icons div:hover {
+      background: #e84393;
+      color: white; }
+  header.header .icons a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: #222222;
+    background: whitesmoke;
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-left: 0.3rem;
+    border-radius: 0.5rem; }
+    header.header .icons a:hover {
+      background: #e84393;
+      color: white; }
+  header.header .icons .search__btn {
+    display: none; }
+    @media (max-width: 768px) {
+      header.header .icons .search__btn {
+        display: inline-block; } }
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: -110%;
+  z-index: 1010;
+  height: 100%;
+  width: 100%;
+  background: url("../../../Assets/Images/NavBar_Bg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-flow: column;
+  align-items: flex-end;
+  padding-right: 15%; }
+  nav.navbar__opened {
+    left: 0; }
+  nav.navbar .close {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    color: #222222;
+    background: white;
+    cursor: pointer;
+    font-size: 3rem; }
+    nav.navbar .close:hover {
+      color: white;
+      background: #e84393; }
+  nav.navbar a {
+    font-size: 4rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: white; }
+    nav.navbar a:hover {
+      color: #e84393;
+      letter-spacing: 0.2rem; }
+
+/*# sourceMappingURL=Styles.css.map */
