@@ -2,3 +2,8 @@
 	display: grid
 	grid-template-columns: repeat(auto-fit, minmax($val, 1fr))
 	gap: 2rem
+
+
+@mixin respond-to($breakpoint)
+	@media (max-width: #{$breakpoint})
+		@content

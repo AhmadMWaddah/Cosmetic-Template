@@ -1,0 +1,98 @@
+@use "_Utils/_Animations.sass"
+
+header.header
+	padding: 1.5rem 9%
+	background: $whiteColor
+	box-shadow: $boxShadow
+	display: flex
+	align-items: center
+	justify-content: space-between
+	position: sticky
+	top: 0
+	right: 0
+	left: 0
+	z-index: 1000
+	
+	@include respond-to($tabletBreakPoint)
+		padding: 1.5rem 2rem
+
+	.logo
+
+		img
+			height: 4rem
+
+	.search__form
+		height: 5rem
+		width: 50rem
+		border-radius: 0.5rem
+		background: $lightBgColor
+		display: flex
+		align-items: center
+		padding: 0 1.5rem
+
+		input
+			width: 100%
+			background: none
+			color: $lightTextColor
+			font-size: 1.6rem
+			text-transform: none
+
+		label
+			font-size: 2rem
+			margin-left: 0.7rem
+			color: $darkColor
+			cursor: pointer
+			&:hover
+				color: $mainColor
+
+		@include respond-to($mobileBreakPoint)
+			position: absolute
+			top: 99%
+			left: 0
+			border-top: $baseBorder
+			border-bottom: $baseBorder
+			width: 100%
+			height: 6rem
+			background: $whiteColor
+			display: none
+			animation: fadeUp 0.2s linear backwards
+			&__opened
+				display: flex
+
+	.icons
+
+		div
+			height: 4.5rem
+			width: 4.5rem
+			line-height: 4.5rem
+			text-align: center
+			color: $darkColor
+			background: $lightBgColor
+			cursor: pointer
+			font-size: 1.8rem
+			margin-left: 0.3rem
+			border-radius: 0.5rem
+			&:hover
+				background: $mainColor
+				color: $whiteColor
+
+		a
+			height: 4.5rem
+			width: 4.5rem
+			line-height: 4.5rem
+			text-align: center
+			color: $darkColor
+			background: $lightBgColor
+			cursor: pointer
+			font-size: 1.8rem
+			margin-left: 0.3rem
+			border-radius: 0.5rem
+			&:hover
+				background: $mainColor
+				color: $whiteColor
+
+		.search__btn
+			display: none
+			
+			@include respond-to($mobileBreakPoint)
+				display: inline-block

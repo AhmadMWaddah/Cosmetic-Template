@@ -21,3 +21,9 @@ html
 		background: transparent
 	&::_webkit-scrollbar-thumb
 		background: $mainColor
+	
+	@include respond-to($tabletBreakPoint)
+		font-size: 55%
+	
+	@include respond-to($smallBreakPoint)
+		font-size: 50%

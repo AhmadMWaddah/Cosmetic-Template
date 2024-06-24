@@ -1,0 +1,43 @@
+nav.navbar
+	position: fixed
+	top: 0
+	left: -110%
+	z-index: 1010
+	height: 100%
+	width: 100%
+	background: url("../../../Assets/Images/NavBar_Bg.png") no-repeat
+	background-position: center
+	background-size: cover
+	display: flex
+	gap: 1rem
+	justify-content: center
+	flex-flow: column
+	align-items: flex-end
+	padding-right: 15%
+	&__opened
+		left: 0
+
+	.close
+		position: absolute
+		top: 4rem
+		right: 4rem
+		height: 5rem
+		width: 5rem
+		line-height: 5rem
+		text-align: center
+		color: $darkColor
+		background: $whiteColor
+		cursor: pointer
+		font-size: 3rem
+		&:hover
+			color: $whiteColor
+			background: $mainColor
+
+	a
+		font-size: 4rem
+		font-weight: lighter
+		text-transform: uppercase
+		color: $whiteColor
+		&:hover
+			color: $mainColor
+			letter-spacing: 0.2rem
