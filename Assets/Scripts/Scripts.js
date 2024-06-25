@@ -66,6 +66,32 @@ window.addEventListener("load", () => {
 	});
 
 
+	/* =--------------------------------------= Arrivals Partition Swiper JS =------------------= */
+	var swiper = new Swiper(".arrivals__slider", {
+		loop: true,
+		grabCursor: true,
+		spaceBetween: 20,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+			},
+			500: {
+				slidesPerView: 2,
+			},
+			900: {
+				slidesPerView: 3,
+			},
+			1200: {
+				slidesPerView: 4,
+			},
+		},
+	});
+
+
 	/* =--------------------------------------= Light Gallery JS =------------------= */	
 	lightGallery(document.querySelector(".gallery .lightbox"));
 
