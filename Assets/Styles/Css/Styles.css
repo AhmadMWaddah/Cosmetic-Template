@@ -297,4 +297,27 @@ nav.navbar {
         width: 100%;
         object-fit: cover; }
 
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem; }
+  .categories .box {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: whitesmoke;
+    text-align: center; }
+    .categories .box:hover {
+      background: #222222; }
+      .categories .box:hover img {
+        filter: invert(1);
+        color: white; }
+      .categories .box:hover p {
+        color: white; }
+    .categories .box img {
+      height: 10rem;
+      margin-bottom: 1rem; }
+    .categories .box p {
+      font-size: 1.7rem;
+      color: #222222; }
+
 /*# sourceMappingURL=Styles.css.map */

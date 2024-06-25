@@ -1,0 +1,28 @@
+@import "../../_Utils/_Mixins.sass"
+
+.categories
+	@include grid(16rem)
+
+	.box
+		padding: 2rem
+		border-radius: 0.5rem
+		background: $lightBgColor
+		text-align: center
+
+		&:hover
+			background: $darkColor
+
+			img
+				filter: invert(1)
+				color: $whiteColor
+
+			p
+				color: $whiteColor
+
+		img
+			height: 10rem
+			margin-bottom: 1rem
+
+		p
+			font-size: 1.7rem
+			color: $darkColor
