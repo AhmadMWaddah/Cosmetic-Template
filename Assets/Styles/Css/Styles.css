@@ -1,16 +1,6 @@
 /* =--------------------------------------= Import Fonts =------------------= */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
-/* =--------------------------------------= Import Sass Variables  =------------------= */
-/* =--------= Border Sizing =-= */
-/* =--------= Fonts =-= */
-/* =--------= Colors =-= */
-/* =--------= Borders =-= */
-/* =--------= Borders =-= */
-/* =--------= Transitions =-= */
-/* =--------= Responsive Break Points =-= */
-/* =--------------------------------------= Import Mixins =------------------= */
 /* =--------------------------------------= Import Resets =------------------= */
-/* =--------------------------------------= Globals & Resets =------------------= */
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -27,11 +17,11 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem; }
-  html::_webkit-scrollbar {
+  html::-webkit-scrollbar {
     width: 1rem; }
-  html::_webkit-scrollbar-track {
+  html::-webkit-scrollbar-track {
     background: transparent; }
-  html::_webkit-scrollbar-thumb {
+  html::-webkit-scrollbar-thumb {
     background: #e84393; }
   @media (max-width: 991px) {
     html {
@@ -47,7 +37,20 @@ section {
       padding: 3rem 2rem; } }
 
 /* =--------------------------------------= Import Components =------------------= */
-/* =--------------------------------------= Import Classes To Extends =------------------= */
+.heading {
+  text-align: center;
+  margin-bottom: 4rem; }
+  .heading h1 {
+    font-size: 3.5rem;
+    color: #222222; }
+  .heading p {
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    color: #777777;
+    max-width: 50rem;
+    line-height: 2; }
+
+/* =--------------------------------------= Import Utils Classes =------------------= */
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -61,7 +64,22 @@ section {
     background: #e84393;
     color: white; }
 
+@media (max-width: 768px) {
+  .swiper-button-next {
+    display: none; } }
+.swiper-button-next::after {
+  font-size: 2rem;
+  color: #222222; }
+
+@media (max-width: 768px) {
+  .swiper-button-prev {
+    display: none; } }
+.swiper-button-prev::after {
+  font-size: 2rem;
+  color: #222222; }
+
 /* =--------------------------------------= Home Page Styles =------------------= */
+/* =------= Header Partition =---= */
 @keyframes fadeUp {
   0% {
     transform: translateY(4rem);
@@ -152,6 +170,7 @@ header.header {
       header.header .icons .search__btn {
         display: inline-block; } }
 
+/* =------= NavBar Partition =---= */
 nav.navbar {
   position: fixed;
   top: 0;
@@ -194,6 +213,7 @@ nav.navbar {
       color: #e84393;
       letter-spacing: 0.2rem; }
 
+/* =------= Home Part Partition =---= */
 @keyframes fadeUp {
   0% {
     transform: translateY(4rem);
@@ -297,6 +317,7 @@ nav.navbar {
         width: 100%;
         object-fit: cover; }
 
+/* =------= Categories Partition =---= */
 .categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -319,5 +340,199 @@ nav.navbar {
     .categories .box p {
       font-size: 1.7rem;
       color: #222222; }
+
+/* =------= About Partition =---= */
+.about {
+  background: url("../../../Assets/Images/About_Bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center; }
+  .about .content {
+    width: 55rem;
+    background: white;
+    padding: 3rem; }
+    .about .content span {
+      font-size: 2rem;
+      color: #e84393; }
+    .about .content h3 {
+      padding-top: 1rem;
+      font-size: 3rem;
+      color: #222222; }
+    .about .content p {
+      font-size: 1.5rem;
+      color: #777777;
+      line-height: 2;
+      padding: 1rem 0; }
+
+/* =------= Shop Partition =---= */
+.shop .slide {
+  border: 0.2rem solid #222222;
+  background: white; }
+  .shop .slide:hover .image img {
+    transform: scale(1.1); }
+  .shop .slide:hover .image .icons {
+    right: 1rem; }
+  .shop .slide .image {
+    height: 35rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+    .shop .slide .image .discount {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.5rem;
+      color: white;
+      background: #e84393;
+      z-index: 10;
+      border-radius: 0.5rem; }
+    .shop .slide .image img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    .shop .slide .image .icons {
+      position: absolute;
+      bottom: 0;
+      right: -8rem; }
+      .shop .slide .image .icons a {
+        height: 5rem;
+        width: 5rem;
+        line-height: 4.5rem;
+        font-size: 2rem;
+        background: white;
+        color: #222222;
+        border: 0.2rem solid #222222;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        margin-bottom: 1rem;
+        text-align: center;
+        display: block; }
+        .shop .slide .image .icons a:hover {
+          background: #e84393;
+          color: white; }
+  .shop .slide .content {
+    padding: 2rem;
+    border-top: 0.2rem solid #222222; }
+    .shop .slide .content .stars {
+      padding-bottom: 0.5rem; }
+      .shop .slide .content .stars i {
+        font-size: 1.5rem;
+        color: #777777; }
+    .shop .slide .content p {
+      font-size: 2rem;
+      color: #222222;
+      line-height: 2; }
+    .shop .slide .content .price {
+      font-size: 2rem;
+      color: #e84393; }
+      .shop .slide .content .price span {
+        font-size: 1.5rem;
+        color: #777777;
+        text-decoration: line-through; }
+
+/* =------= Gallery Partition =---= */
+.gallery {
+  background: whitesmoke; }
+  .gallery .lightbox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem; }
+    .gallery .lightbox a {
+      height: 30rem;
+      overflow: hidden;
+      border: 1rem solid white;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); }
+      .gallery .lightbox a:hover img {
+        transform: scale(1.1); }
+      .gallery .lightbox a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+/* =------= Team Partition =---= */
+.team {
+  background: linear-gradient(whitesmoke 50%, white 50%); }
+  .team .box__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem; }
+    .team .box__container .box {
+      border: 0.2rem solid #222222;
+      text-align: center; }
+      .team .box__container .box:hover .image img {
+        transform: scale(1.1); }
+      .team .box__container .box:hover .image .share {
+        left: 0; }
+      .team .box__container .box .image {
+        width: 100%;
+        height: 50rem;
+        position: relative;
+        overflow: hidden; }
+        .team .box__container .box .image img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
+        .team .box__container .box .image .share {
+          position: absolute;
+          top: 0;
+          left: -8rem;
+          background: #222222;
+          display: flex;
+          gap: 1rem;
+          height: 100%;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          padding: 0 1rem; }
+          .team .box__container .box .image .share a {
+            height: 5rem;
+            width: 5rem;
+            line-height: 5rem;
+            border: 0.2rem solid white;
+            color: white;
+            font-size: 2.5rem; }
+            .team .box__container .box .image .share a:hover {
+              background: white;
+              color: #222222; }
+      .team .box__container .box .content {
+        padding: 1rem;
+        border-top: 0.2rem solid #222222; }
+        .team .box__container .box .content h3 {
+          font-size: 2rem;
+          color: #222222; }
+        .team .box__container .box .content p {
+          font-size: 1.5rem;
+          color: #e84393; }
+
+/* =------= Arrivals Partition =---= */
+.arrivals .slide {
+  text-align: center;
+  background: white; }
+  .arrivals .slide:hover .image img {
+    transform: scale(1.1); }
+  .arrivals .slide .image {
+    width: 100%;
+    height: 30rem;
+    overflow: hidden; }
+    .arrivals .slide .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .arrivals .slide .content {
+    padding-top: 0.5rem; }
+    .arrivals .slide .content p {
+      font-size: 2rem;
+      color: #222222;
+      line-height: 2rem;
+      padding: 0.5rem 0; }
+    .arrivals .slide .content .price {
+      font-size: 2rem;
+      color: #e84393; }
+      .arrivals .slide .content .price span {
+        font-size: 1.5rem;
+        color: #777777;
+        text-decoration: line-through; }
 
 /*# sourceMappingURL=Styles.css.map */

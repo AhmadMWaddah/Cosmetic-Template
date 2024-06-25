@@ -1,0 +1,84 @@
+.shop
+	
+	.slide
+		border: $baseBorder
+		background: $whiteColor
+
+		&:hover
+
+			.image
+
+				img
+					transform: scale(1.1)
+
+				.icons
+					right: 1rem
+
+		.image
+			height: 35rem
+			width: 100%
+			position: relative
+			overflow: hidden
+
+			.discount
+				position: absolute
+				top: 1rem
+				left: 1rem
+				padding: 0.5rem 1.5rem
+				font-size: 1.5rem
+				color: $whiteColor
+				background: $mainColor
+				z-index: 10
+				border-radius: 0.5rem
+
+			img
+				height: 100%
+				width: 100%
+				object-fit: cover
+
+			.icons
+				position: absolute
+				bottom: 0
+				right: -8rem
+
+				a
+					height: 5rem
+					width: 5rem
+					line-height: 4.5rem
+					font-size: 2rem
+					background: $whiteColor
+					color: $darkColor
+					border: $baseBorder
+					box-shadow: $boxShadow
+					margin-bottom: 1rem
+					text-align: center
+					display: block
+
+					&:hover
+						background: $mainColor
+						color: $whiteColor
+
+		.content
+			padding: 2rem
+			border-top: $baseBorder
+
+			.stars
+				padding-bottom: 0.5rem
+
+				i
+					font-size: 1.5rem
+					color: $lightTextColor
+
+			p
+				font-size: 2rem
+				color: $darkColor
+				line-height: 2
+
+			.price
+				font-size: 2rem
+				color: $mainColor
+
+				span
+					font-size: 1.5rem
+					color: $lightTextColor
+					text-decoration: line-through
