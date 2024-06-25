@@ -11,3 +11,21 @@
 	&:hover
 		background: $mainColor
 		color: $whiteColor
+
+.swiper-button-next
+
+	@include respond-to($mobileBreakPoint)
+		display: none
+
+	&::after
+		font-size: 2rem
+		color: $darkColor
+
+.swiper-button-prev
+
+	@include respond-to($mobileBreakPoint)
+		display: none
+
+	&::after
+		font-size: 2rem
+		color: $darkColor
