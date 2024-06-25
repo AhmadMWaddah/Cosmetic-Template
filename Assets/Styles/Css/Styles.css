@@ -320,4 +320,28 @@ nav.navbar {
       font-size: 1.7rem;
       color: #222222; }
 
+.about {
+  background: url("../../../Assets/Images/About_Bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center; }
+  .about .content {
+    width: 55rem;
+    background: white;
+    padding: 3rem; }
+    .about .content span {
+      font-size: 2rem;
+      color: #e84393; }
+    .about .content h3 {
+      padding-top: 1rem;
+      font-size: 3rem;
+      color: #222222; }
+    .about .content p {
+      font-size: 1.5rem;
+      color: #777777;
+      line-height: 2;
+      padding: 1rem 0; }
+
 /*# sourceMappingURL=Styles.css.map */
