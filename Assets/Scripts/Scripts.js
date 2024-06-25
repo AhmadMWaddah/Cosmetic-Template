@@ -65,5 +65,8 @@ window.addEventListener("load", () => {
 		},
 	});
 
-	
+
+	/* =--------------------------------------= Light Gallery JS =------------------= */	
+	lightGallery(document.querySelector(".gallery .lightbox"));
+
 });
