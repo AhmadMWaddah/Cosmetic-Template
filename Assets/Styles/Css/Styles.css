@@ -535,4 +535,38 @@ nav.navbar {
         color: #777777;
         text-decoration: line-through; }
 
+/* =------= Reviews Partition =---= */
+.review .reviews__slider .slide .user {
+  display: flex;
+  gap: 1rem;
+  align-items: center; }
+  .review .reviews__slider .slide .user img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%; }
+  .review .reviews__slider .slide .user .info h3 {
+    font-size: 2rem;
+    color: #222222; }
+  .review .reviews__slider .slide .user .info .stars i {
+    font-size: 1.5rem;
+    color: #e84393; }
+.review .reviews__slider .slide .text {
+  padding: 2rem;
+  background: whitesmoke;
+  line-height: 2;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: #777777;
+  position: relative;
+  margin-top: 2rem; }
+  .review .reviews__slider .slide .text::before {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: 3rem;
+    height: 2rem;
+    width: 2rem;
+    background: whitesmoke;
+    transform: rotate(45deg); }
+
 /*# sourceMappingURL=Styles.css.map */

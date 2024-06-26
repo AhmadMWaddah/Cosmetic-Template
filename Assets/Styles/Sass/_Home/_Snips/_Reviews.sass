@@ -1,0 +1,46 @@
+.review
+
+	.reviews__slider
+
+		.slide
+
+			.user
+				display: flex
+				gap: 1rem
+				align-items: center
+
+				img
+					width: 7rem
+					height: 7rem
+					border-radius: 50%
+
+				.info
+
+					h3
+						font-size: 2rem
+						color: $darkColor
+
+					.stars
+
+						i
+							font-size: 1.5rem
+							color: $mainColor
+			.text
+				padding: 2rem
+				background: $lightBgColor
+				line-height: 2
+				border-radius: 0.5rem
+				font-size: 1.5rem
+				color: $lightTextColor
+				position: relative
+				margin-top: 2rem
+
+				&::before
+					content: ""
+					position: absolute
+					top: -1rem
+					left: 3rem
+					height: 2rem
+					width: 2rem
+					background: $lightBgColor
+					transform: rotate(45deg)
