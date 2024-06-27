@@ -1,0 +1,79 @@
+.footer
+	background: $lightBgColor
+
+	.box__container
+		@include grid(25rem)
+
+		.box
+
+			h3
+				font-size: 2.2rem
+				color: $darkColor
+				padding: 1rem 0
+
+			p
+				font-size: 1.5rem
+				color: $lightTextColor
+				padding: 1rem 0
+
+				i
+					padding-right: 0.5rem
+					color: $mainColor
+
+			.link
+				padding: 1rem 0
+				display: block
+				font-size: 1.5rem
+				color: $lightTextColor
+
+				i
+					padding-right: 0.5rem
+					color: $mainColor
+
+				&:hover
+					color: $mainColor
+
+					i
+						padding-right: 1.5rem
+
+			.share
+				margin-top: 2rem
+
+				a
+					height: 5rem
+					width: 5rem
+					line-height: 4.5rem
+					text-align: center
+					color: $darkColor
+					background: $whiteColor
+					font-size: 2rem
+					margin-right: 0.3rem
+					border: $baseBorder
+
+					&:hover
+						background: $mainColor
+						color: $whiteColor
+
+			form
+			
+				.email
+					width: 100%
+					border: $baseBorder
+					padding: 1.2rem 1.4rem
+					font-size: 1.6rem
+					color: $lightTextColor
+					text-transform: none
+					margin: 1rem 0
+
+	.copyrights
+		font-size: 1.5rem
+		text-align: center
+		margin-top: 3rem
+		padding: 1rem
+		padding-top: 2rem
+		border-top: $baseBorder
+		color: $lightTextColor
+		font-weight: 500
+
+		span
+			color: $mainColor
