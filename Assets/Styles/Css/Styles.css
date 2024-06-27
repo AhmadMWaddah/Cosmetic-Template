@@ -569,4 +569,35 @@ nav.navbar {
     background: whitesmoke;
     transform: rotate(45deg); }
 
+/* =------= Services Partition =---= */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+  background: whitesmoke; }
+  .services .box {
+    border: 0.2rem solid #222222;
+    text-align: center;
+    padding: 2rem;
+    background: white; }
+    .services .box:hover {
+      background: #222222; }
+      .services .box:hover img {
+        filter: invert(1); }
+      .services .box:hover h3 {
+        color: white; }
+      .services .box:hover p {
+        color: white; }
+    .services .box img {
+      height: 8rem;
+      margin-bottom: 0.5rem; }
+    .services .box h3 {
+      padding: 0.7rem 0;
+      font-size: 2rem;
+      color: #222222; }
+    .services .box p {
+      font-size: 1.5rem;
+      color: #777777;
+      line-height: 2; }
+
 /*# sourceMappingURL=Styles.css.map */
