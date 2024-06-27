@@ -600,4 +600,51 @@ nav.navbar {
       color: #777777;
       line-height: 2; }
 
+/* =------= Blogs Partition =---= */
+.blogs .blogs__slider .slide:hover .image img {
+  transform: scale(1.1); }
+.blogs .blogs__slider .slide:hover .image .icons {
+  transform: translateY(0); }
+.blogs .blogs__slider .slide .image {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .blogs .blogs__slider .slide .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .blogs .blogs__slider .slide .image .icons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border: 0.2rem solid #222222;
+    z-index: 10;
+    background: white;
+    transform: translateY(10rem); }
+    .blogs .blogs__slider .slide .image .icons a {
+      font-size: 1.5rem;
+      color: #222222; }
+      .blogs .blogs__slider .slide .image .icons a i {
+        padding-right: 0.5rem;
+        color: #e84393; }
+      .blogs .blogs__slider .slide .image .icons a:hover {
+        color: #e84393; }
+.blogs .blogs__slider .slide .content {
+  text-align: center;
+  padding: 1.5rem; }
+  .blogs .blogs__slider .slide .content h3 {
+    font-size: 2rem;
+    color: #222222; }
+  .blogs .blogs__slider .slide .content p {
+    padding: 1rem 0;
+    line-height: 2;
+    color: #777777;
+    font-size: 1.5rem; }
+
 /*# sourceMappingURL=Styles.css.map */

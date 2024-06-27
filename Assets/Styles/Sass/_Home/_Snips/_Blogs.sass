@@ -1,0 +1,65 @@
+.blogs
+
+	.blogs__slider
+
+		.slide
+
+			&:hover
+
+				.image
+
+					img
+						transform: scale(1.1)
+
+					.icons
+						transform: translateY(0)
+
+			.image
+				height: 30rem
+				width: 100%
+				overflow: hidden
+				position: relative
+
+				img
+					height: 100%
+					width: 100%
+					object-fit: cover
+
+				.icons
+					position: absolute
+					bottom: 0
+					left: 0
+					right: 0
+					display: flex
+					align-items: center
+					justify-content: space-between
+					padding: 1.5rem
+					border: $baseBorder
+					z-index: 10
+					background: $whiteColor
+					transform: translateY(10rem)
+
+					a
+						font-size: 1.5rem
+						color: $darkColor
+
+						i
+							padding-right: 0.5rem
+							color: $mainColor
+
+						&:hover
+							color: $mainColor
+
+			.content
+				text-align: center
+				padding: 1.5rem
+
+				h3
+					font-size: 2rem
+					color: $darkColor
+
+				p
+					padding: 1rem 0
+					line-height: 2
+					color: $lightTextColor
+					font-size: 1.5rem
