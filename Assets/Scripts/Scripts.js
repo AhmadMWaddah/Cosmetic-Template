@@ -6,12 +6,15 @@ window.addEventListener("load", () => {
 	const mobileNavBar = document.querySelector("#navbar");
 	const menuClose = document.querySelector("#close");
 	const menuOpen = document.querySelector("#menu-btn");
-	menuOpen.addEventListener("click", () => {
+	function openMenu() {
 		mobileNavBar.classList.add("navbar__opened");
-	});
-	menuClose.addEventListener("click", () => {
+	}
+	function closeMenu() {
 		mobileNavBar.classList.remove("navbar__opened");
-	});
+	}
+	menuOpen.addEventListener("click", openMenu);
+	menuClose.addEventListener("click", closeMenu);
+	window.addEventListener("scroll", closeMenu);
 
 
 	/* =--------------------------------------= Toggle Search Form =------------------= */
