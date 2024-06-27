@@ -1,0 +1,35 @@
+.services
+	@include grid(31rem)
+	background: $lightBgColor
+	
+	.box
+		border: $baseBorder
+		text-align: center
+		padding: 2rem
+		background: $whiteColor
+
+		&:hover
+			background: $darkColor
+
+			img
+				filter: invert(1)
+
+			h3
+				color: $whiteColor
+
+			p
+				color: $whiteColor
+
+		img
+			height: 8rem
+			margin-bottom: 0.5rem
+
+		h3
+			padding: 0.7rem 0
+			font-size: 2rem
+			color: $darkColor
+
+		p
+			font-size: 1.5rem
+			color: $lightTextColor
+			line-height: 2
